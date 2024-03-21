@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Madplan</title>
+  <link rel="stylesheet" href="css/css.css">
+  <!-- Fonten til logoen  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Fonter til overskrifter i header -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!-- Gruper alle punkter i manupanellen i en kontainer -->
+        <div class="menu-panel">
+          <div class="overskrifter-venstre"> 
+            <ul>
+              <div class="dropdown">
+                <span>
+                  <li><a href="madplan.html">Madplan</a></li>
+                </span>
+                <div class="dropdown-content">
+                  <a href="madplan.html" ><p>Madplan denne uge</p></a>
+                  <p>Indkøbsliste denne uge</p>
+                  <p>Madplan næste uge</p>
+                  <p>Indkøbsliste næste uge</p>
+                </div>
+              </div>
+    <!-- Tilføjer "drowdown menuer for at vise underemnerne"-->
+              <div class="dropdown">
+                <span>
+                  <li><a>Oprifter</a></li>
+                </span>
+                <div class="dropdown-content">
+                  <p>Opskrifter efter bestemte varer<p>
+                  <p>Morgenmad</p>
+                  <p>Middag</p>
+                  <p>Aftensmad</p>
+                  <p>Vegetar</p>
+                  <p>Desserter</p>
+                </div>
+            </div>
+              <li><a href="/artiklen.html">Artikler</a></li>
+            </ul>
+          </div>
+    <!-- Logo -->
+          <div class="logo">
+            <a href="forside.html"><b>mums.</b></a>
+          </div>
+          <div class="overskrifter-højre"> 
+            <ul>
+              <li><a href="/formularen.html">Abonnement</a></li>
+              <li><a>Registrer/Log På</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+  
+  <main>
+    <div class="overskrifter-h1">
+      <h1> Abonner på magasinet </h1>
+    </div>
+    <div>
+      <div class="tekst-formularen">
+        <p>og vær en af de første til af få nye opskrifter og madplaner hver uge</p>
+      </div>
+    </div>
+    <div class="form-container">
+      <div class="formularen">
+          <label for="Navn"><strong>Navn</strong></label>
+          <input type="text" id="navn" name="Navn" placeholder="Skriv navn..">
+          <br>
+          <br>
+          <label for="Email-adresse"><strong>Email-adrese</strong></label>
+          <input type="text" id="Email-adresse" name="Email-adresse" placeholder="Skriv email-adrese.."><br><br>
+          <div> 
+            <button><strong>Abonner</strong></button>
+          </div>
+      </div>
+    </div>
+    <div class="FølgOs">
+      <h2>Følg Os</h2>
+    </div>
+    <div class="FølgOs">
+      <img src="/images/instagramIkon.webp" alt="Instagram Ikon" width="60px" height="60px">
+      <img src="/images/tiktokIkon.png" alt="TikTok Ikon" width="60px" height="60px">
+    </div>
+    <br>
+    <br>
+
+  </main>
+
+<!-- Opretter class til footer, og deler dem op i to, så jeg kan få dem til at være i to koloner -->
+  <footer>
+    <div class="footer-koloner">
+      <div class="kolone">
+        <h3>Om os</h3>
+        <p>Kontakt os</p>
+        <p>Partner</p>
+      </div>
+        <div class="kolone">
+          <h3>Følg os</h3>
+          <img src="/images/instagramIkon.webp" alt="Instagram Ikon">
+          <img src="/images/tiktokIkon.png" alt="TikTok Ikon">
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
