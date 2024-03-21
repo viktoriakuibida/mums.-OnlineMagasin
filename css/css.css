@@ -1,0 +1,534 @@
+
+/* Styling af menu-panellen */
+.menu-panel {
+  background-color: #FFB3BA;
+  color: #fff;
+  padding: 7px;
+  display: flex; 
+  justify-content: space-between; /* Placerer elementerne jævnt mellemrum til venstre og højre */
+  align-items: center; /* Centrerer indholdet vandret */
+  position: fixed; /* Fastgør menu-containeren øverst på siden */
+  top: 0; /* Placer menu-containeren i toppen af vinduet */
+  left: 0; /* Placer menu-containeren helt til venstre i vinduet */
+  width: 100%; /* Gør menu-containeren 100% bredde */
+  z-index: 999; /* Sørg for at menuen er over andre elementer */
+}
+
+.menu-panel ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu-panel .overskrifter-venstre {
+  display: flex;
+}
+
+.menu-panel li {
+  margin-right: 30px;
+}
+
+.menu-panel a {
+  text-decoration: none; /* Fjerner strejerne under overskrifterne*/
+  color: #fff;
+  font-family: "Poppins", sans-serif; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+}
+
+/*Styling af logoen*/
+.logo {
+  border: 3px dashed #fff; /* Tilføjer en stribbet rammer omkring logoet */
+  border-radius: 10px; /* Hjørnerne på rammen og størrelsen*/
+  padding: 5px; /* Plads mellem rammen og logoet */
+  margin: 0 auto; /* Centrerer logoet vandret */
+  display: block; /* Gør logoet til et block-element for at sikre, at margin: 0 auto; fungerer korrekt */
+}
+
+.logo a{
+  font-style: bold;
+  font-weight: 100;
+  font-size: 34px;
+  font-family: "League Spartan", sans-serif; /*Denne font er blevet taget Google Fonts, og er linket i head i html*/
+  font-optical-sizing: auto;
+}
+
+/*Styling af drowdown menuer*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFB3BA;
+  color: #fff;
+  font-family: "Poppins", sans-serif; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Styling af alle h1 overskrifter */
+.overskrifter-h1{
+  color: black;
+  font-size: 20px;
+  position: relative;
+  top: 80px;
+  font-family: "Poppins", sans-serif; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/
+  font-weight: 600;
+  font-style: normal;
+  display: flex;
+  justify-content: center; /* Centrerer indholdet vandret */
+}
+
+/* Styling af "rullepanellen" med billeder, hvis tiden var længere, var det mening at det skulle rulle ved hjælp af pillene, så man kunne se mere indhold */
+.billeder {
+  display: flex; /* Brug Flexbox til layout */
+  flex-wrap: nowrap; /* Forsikrer, at billeder ikke wraps til næste linje */
+  position: relative;
+}
+
+.billeder img {
+  width: 98%;
+  height: 400px;
+  object-fit: cover;
+  opacity: 0.6;
+  position: relative;
+  top: 100px;
+  flex: 0 0 auto; /* Billederne skal ikke strækkes eller krympe */ 
+  z-index: 0; /* Sørg for at billedet er bag overlayen */
+}
+
+.billeder a {
+  text-decoration: none; /* Fjerne understrejning fra billeder */
+  position: relative; /* Sørg for at ankeret har relativ positionering */
+}
+
+.overskrifter-h2 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 18px;
+  z-index: 1; /* Sørger for at overlayen er foran billedet */
+  text-align: center; /* Centrer teksten vandret */
+  font-family: "Poppins", sans-serif; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/
+}
+
+.rullepil img{
+  width: 40px;
+  height: 40px;
+  top:70%;
+
+}
+
+/*Styling af klassen Følg os*/
+.FølgOs img {
+  height: 80px;
+  width: 80px;
+  margin: 5px; /* Tilføj lidt luft omkring billederne */
+  z-index: 2; /* Sørg for at rullepilene er foran andre billeder */
+}
+
+.FølgOs h2 {
+  margin-bottom: 10px; /* Tilføj lidt mellemrum mellem overskriften og billederne */
+}
+
+.FølgOs {
+  color: black;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/
+  font-style: normal;
+  text-align: center; /* Centrerer teksten vandret */
+}
+
+.FølgOs div {
+  display: flex;
+  justify-content: center; /* Centrerer billederne vandret */
+  align-items: center; /* Centrerer billederne lodret */
+}
+
+/*Styling af footerne*/
+footer {
+  bottom: 0; /* Placer footer nederst */
+  width: 100%; /* Gør footer-elementets bredde 100% af browser-vinduet */
+  left:0;
+  background-color: #FFB3BA;
+  text-align: center;
+  color: white;
+  height: 100px;
+  font-family: "Poppins", sans-serif; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/
+  font-style:normal;
+  font-size: small;
+} 
+
+.footer-koloner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.kolone {
+  flex: 1;
+  margin: 5px;
+  text-align: center; /* Centrere teksten */
+}
+
+.kolone h3 {
+  margin-bottom: 5px; /* Tilføjer lidt mellemrum under overskriften */
+}
+
+.kolone p {
+  margin: 0; /* Fjerner den foruddefinerede margen fra <p> tags */
+}
+
+.kolone img {
+  width: auto;
+  height: 40px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Sørg for, at body fylder hele viewportens højde */
+}
+
+main {
+  flex: 1; /* Gør hovedindholdet fleksibelt, så det fylder resten af den tilgængelige plads */
+}
+
+/* Styling for billde og text i artiklen.html linje 1*/
+.teksten1 {
+  font-family: "Poppins", sans-serif; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/
+  font-style: normal;
+  font-size: medium;
+  text-align: justify;
+  position: absolute; /* Gør at jeg selv kan bestemme positionen på mit text */
+  left: 800px; 
+  right: 300px;
+}
+
+.billeder-og-tekst1 {
+  display: flex;
+  align-items: center;
+  max-width: 750px; /* Tilføj en maksimal bredde for at begrænse bredden af indholdet */
+  margin-top: 250px; /* Tilføj afstand over indholdet */
+  margin-left: 100px;
+  
+}
+
+.billeder-og-tekst1 img {
+  max-height: 390px;
+  max-width: 500px; /* Gør billedet responsivt */
+  margin-right: 10px; /* Tilføj lidt afstand mellem billedet og teksten */
+  position: absolute;
+  right: 750px;
+}
+
+.billeder-og-tekst1 .teksten {
+  flex-grow: 1; /* Lad teksten vokse og fylde tilgængelig plads */
+  max-width: calc(100% - 110px); /* Juster bredden af teksten efter behov */
+}
+
+/* Styling for billde og text i artiklen.html linje 2*/
+.teksten2 {
+  font-family: "Poppins", sans-serif; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/
+  font-style: normal;
+  font-size: medium;
+  text-align: justify;
+  position: absolute; /* Gør at jeg selv kan bestemme positionen på mit text */
+  left: 300px; 
+  right: 800px;
+}
+
+.billeder-og-tekst2 {
+  display: flex;
+  align-items: center;
+  max-width: 750px; /* Tilføj en maksimal bredde for at begrænse bredden af indholdet */
+  margin-top: 200px; /* Tilføj afstand over indholdet */
+  margin-left: 100px;
+  
+}
+
+.billeder-og-tekst2 img {
+  max-height: 390px;
+  max-width: 550px; /* Gør billedet responsivt */
+  position: absolute;
+  top: 350px; /* Juster positionen af billedet opad */
+  right: 400px;
+  left: 755px;
+  margin-top: 170px; /* Tilføj afstand over indholdet */
+}
+
+.billeder-og-tekst2 .teksten {
+  flex-grow: 1; /* Lad teksten vokse og fylde tilgængelig plads */
+  max-width: calc(100% - 110px); /* Juster bredden af teksten efter behov */
+}
+
+/* Styling for billde og text i artiklen.html linje 3*/
+.teksten3 {
+  font-family: "Poppins", sans-serif; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/
+  font-style: normal;
+  font-size: medium;
+  text-align: justify;
+  position: absolute; /* Gør at jeg selv kan bestemme positionen på mit text */
+  left: 800px; 
+  right: 300px;
+}
+
+.billeder-og-tekst3 {
+  display: flex;
+  align-items: center;
+  max-width: 750px; /* Tilføj en maksimal bredde for at begrænse bredden af indholdet */
+  margin-top: 210px; /* Tilføj afstand over indholdet */
+  margin-left: 100px;
+  
+}
+
+.billeder-og-tekst3 img {
+  max-height: 390px;
+  max-width: 500px; /* Gør billedet responsivt */
+  margin-right: 10px; /* Tilføj lidt afstand mellem billedet og teksten */
+  position: absolute;
+  right: 750px;
+}
+
+.billeder-og-tekst3 .teksten {
+  flex-grow: 1; /* Lad teksten vokse og fylde tilgængelig plads */
+  max-width: calc(100% - 110px); /* Juster bredden af teksten efter behov */
+}
+
+/* Styling for billde og text i artiklen.html linje 4*/
+.teksten4 {
+  font-family: "Poppins", sans-serif; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/
+  font-style: normal;
+  font-size: medium;
+  text-align: justify;
+  position: absolute; /* Gør at jeg selv kan bestemme positionen på mit text */
+  left: 300px; 
+  right: 800px;
+}
+
+.billeder-og-tekst4 {
+  display: flex;
+  align-items: center;
+  max-width: 750px; /* Tilføj en maksimal bredde for at begrænse bredden af indholdet */
+  margin-top: 200px; /* Tilføj afstand over indholdet */
+  margin-left: 100px;
+}
+
+.billeder-og-tekst4 img {
+  max-height: 390px;
+  max-width: 550px; /* Gør billedet responsivt */
+  position: absolute;
+  top: 350px; /* Juster positionen af billedet opad */
+  right: 400px;
+  left: 755px;
+  margin-top: 770px; /* Tilføj afstand over indholdet */
+}
+
+.billeder-og-tekst4 .teksten {
+  flex-grow: 1; /* Lad teksten vokse og fylde tilgængelig plads */
+  max-width: calc(100% - 110px); /* Juster bredden af teksten efter behov */
+}
+
+/* Styling for billde og text i artiklen.html linje 5*/
+.teksten5 {
+  font-family: "Poppins", sans-serif; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/
+  font-style: normal;
+  font-size: medium;
+  text-align: justify;
+  position: absolute; /* Gør at jeg selv kan bestemme positionen på mit text */
+  left: 800px; 
+  right: 300px;
+}
+
+.billeder-og-tekst5 {
+  display: flex;
+  align-items: center;
+  max-width: 750px; /* Tilføj en maksimal bredde for at begrænse bredden af indholdet */
+  margin-top: 255px; /* Tilføj afstand over indholdet */
+  margin-left: 100px;
+  
+  
+}
+
+.billeder-og-tekst5 img {
+  max-height: 390px;
+  max-width: 500px; /* Gør billedet responsivt */
+  margin-right: 10px; /* Tilføj lidt afstand mellem billedet og teksten */
+  position: absolute;
+  right: 750px;
+}
+
+.billeder-og-tekst5 .teksten {
+  flex-grow: 1; /* Lad teksten vokse og fylde tilgængelig plads */
+  max-width: calc(100% - 110px); /* Juster bredden af teksten efter behov */
+}
+
+/* Styling af ugedage1 overskrifter i madplan.html */
+.ugedage1 {
+  color: black;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-between; /* Fordeler pladsen jævnt mellem elementerne */
+  padding: 0 120px; /* Tilføjer ...px padding til begge sider af containeren */
+}
+
+.ugedage1 h3 {
+  margin: 0; /* Fjerner den naturlige margin for h3-elementer */
+}
+
+/* Styling af billederne og tekst (1)på dem i madpla.html*/
+.linje1madplan {
+  display: flex; /* Brug Flexbox til layout */
+  flex-wrap: nowrap; /* Forsikrer, at billeder ikke wraps til næste linje */
+  position: relative;
+}
+
+.linje1madplan img {
+  width: 98%;
+  height: 400px;
+  object-fit: cover;
+  opacity: 0.6;
+  position: relative;
+  top: 5px;
+  flex: 0 0 auto; /* Billederne skal ikke strækkes eller krympe */ 
+  z-index: 0; /* Sørg for at billedet er bag overlayen */
+  
+}
+
+.linje1madplan a {
+  text-decoration: none; /* Fjerne understrejning fra billeder */
+  position: relative; /* Sørg for at ankeret har relativ positionering */
+}
+
+.overskrifter1-h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 18px;
+  z-index: 1; /* Sørger for at overlayen er foran billedet */
+  text-align: center; /* Centrer teksten vandret */
+  font-family: "Poppins", sans-serif; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/
+}
+
+/* Styling af ugedage1 overskrifter i madplan.html */
+.ugedage2 {
+  color: black;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between; /* Fordeler pladsen jævnt mellem elementerne */
+  padding: 0 320px; /* Tilføjer ...px padding til begge sider af containeren */
+}
+
+.ugedage2 h3 {
+  margin: 0; /* Fjerner den naturlige margin for h3-elementer */
+
+}
+
+/* Styling af billederne og tekst (2) på dem i madpla.html*/
+.linje2madplan {
+  display: flex; /* Brug Flexbox til layout */
+  justify-content: center; /* Centrer indholdet vandret */
+  align-items: center; /* Centrer indholdet lodret */
+  height: 400px; /* Juster højden efter behov */
+  position: relative;
+}
+
+.linje2madplan img {
+  width: 98%;
+  height: 400px;
+  object-fit: cover;
+  opacity: 0.6;
+  position: relative;
+  top: 5px;
+  flex: 0 0 auto; /* Billederne skal ikke strækkes eller krympe */ 
+  z-index: 0; /* Sørg for at billedet er bag overlayen */
+}
+
+.linje2madplan a {
+  text-decoration: none; /* Fjerne understrejning fra billeder */
+  position: relative; /* Sørg for at ankeret har relativ positionering */
+}
+
+.overskrifter2-h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 18px;
+  z-index: 1; /* Sørger for at overlayen er foran billedet */
+  text-align: center; /* Centrer teksten vandret */
+  font-family: "Poppins", sans-serif; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/
+}
+
+/*Styling af formularen*/
+.tekst-formularen{
+  font-family: "Poppins", sans-serif; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/ 
+  color: black;
+  font-size: 18px;
+  position: relative;
+  top: 35px;
+  font-style: normal;
+  display: flex;
+  justify-content: center; /* Centrerer indholdet vandret */
+}
+
+.form-container {
+  font-family: "Poppins", sans-serif; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/ 
+  color: black;
+  font-size: 18px;
+  display: flex;
+  justify-content: center; /* Centrerer indholdet vandret */
+  align-items: center; /* Centrerer indholdet lodret */
+  text-align: center; /* Centrer teksten vandret */
+  height: 400px; 
+}
+
+.formularen {
+  background-color: #fff; /* Baggrundsfarve for boksen */
+  padding: 20px; /* Tilføj polstring for at give luft til indholdet */
+  border-radius: 10px; /* Runde hjørner */
+  border: 3px dashed #FFB3BA; /* Stribet kant */
+  
+}
+
+.formularen label {
+  display: block; /* Sørger for, at hver label-input-par står på en ny linje */
+  margin-bottom: 10px; /* Tilføj lidt afstand mellem hvert label-input-par */
+}
+
+/*Styling af knappen i formularen*/
+.formularen button {
+  background-color:#FFB3BA; 
+  border-color: #FFB3BA;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
